@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "marquee-line";
+
+%clearfix {
+    &:before {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+    }
+}
